@@ -1,0 +1,89 @@
+/* Reset i podstawowe style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b12;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Nagłówek */
+header {
+    background: linear-gradient(135deg, #8a2be2, #4a00e0);
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+/* Sekcje */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: #161623;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #2a2a40;
+}
+
+h2 {
+    color: #00f2fe;
+    margin-bottom: 1rem;
+}
+
+/* Launchpad (Kontroler DJ) */
+.launchpad {
+    display: grid;
+    grid-template-columns: repeat(2, 1rem);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 300px;
+    margin: 1.5rem auto;
+}
+
+.pad {
+    background: #222;
+    border: 2px solid #8a2be2;
+    border-radius: 8px;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pad:hover {
+    background: #8a2be2;
+    box-shadow: 0 0 15px #8a2be2;
+    transform: scale(1.05);
+}
+
+.pad:active {
+    transform: scale(0.95);
+    background: #00f2fe;
+    border-color: #00f2fe;
+    box-shadow: 0 0 20px #00f2fe;
+}
+
+/* Stopka */
+footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
